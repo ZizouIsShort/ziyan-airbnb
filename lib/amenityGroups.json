@@ -1,0 +1,106 @@
+[
+ {
+  "title": "Bathroom",
+  "items": [
+   "Hairdryer",
+   "Cleaning products",
+   "Shampoo",
+   "Hot water",
+   "Shower gel"
+  ]
+ },
+ {
+  "title": "Bedroom and laundry",
+  "items": [
+   "Washing machine",
+   "Hangers",
+   "Bed linen",
+   "Room-darkening blinds",
+   "Iron",
+   "Clothes storage",
+   "Cot"
+  ]
+ },
+ {
+  "title": "Entertainment",
+  "items": [
+   "TV"
+  ]
+ },
+ {
+  "title": "Family",
+  "items": [
+   "Cot"
+  ]
+ },
+ {
+  "title": "Heating and cooling",
+  "items": [
+   "Air conditioning",
+   "Ceiling fan"
+  ]
+ },
+ {
+  "title": "Home safety",
+  "items": [
+   "Exterior security cameras on property",
+   "Carbon monoxide alarm",
+   "Smoke alarm"
+  ]
+ },
+ {
+  "title": "Internet and office",
+  "items": [
+   "Wifi",
+   "Dedicated workspace"
+  ]
+ },
+ {
+  "title": "Kitchen and dining",
+  "items": [
+   "Kitchen",
+   "Fridge",
+   "Freezer",
+   "Microwave",
+   "Cooking basics",
+   "Crockery and cutlery",
+   "Kettle",
+   "Coffee",
+   "Wine glasses",
+   "Toaster",
+   "Blender",
+   "Cooker"
+  ]
+ },
+ {
+  "title": "Location features",
+  "items": [
+   "Private entrance"
+  ]
+ },
+ {
+  "title": "Outdoor",
+  "items": [
+   "Patio or balcony",
+   "Outdoor dining area"
+  ]
+ },
+ {
+  "title": "Parking and facilities",
+  "items": [
+   "Free parking on premises",
+   "Pool",
+   "Hot tub",
+   "Gym"
+  ]
+ },
+ {
+  "title": "Services",
+  "items": [
+   "Pets allowed",
+   "Cleaning available during stay",
+   "Long-term stays allowed",
+   "Self check-in"
+  ]
+ }
+]

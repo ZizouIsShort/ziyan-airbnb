@@ -1,0 +1,1533 @@
+ALL PROMPTS — take-home-assignment (Airbnb listing clone)
+Project: /Users/ziyanansarsolkar/Documents/zedprojects/take-home-assignment
+Extracted from OpenCode session history, in chronological order.
+Note: the first two sessions both contain the same "Master Prompt" (retries).
+========================================================================
+
+========================================================================
+SESSION: New session - 2026-10-22T16:52:21.537Z
+Started: 2026-10-22 22:22   (id: ses_e9b78d85effef6TbuBgSLaNY1a)
+========================================================================
+
+--- PROMPT 1 (2026-10-22 22:22:40) ---
+# OpenCode Master Prompt — Playpower Labs Airbnb Clone
+
+You are an expert frontend engineer, UI replication specialist, and AI-native developer. Complete the Playpower Labs Airbnb-Clone take-home assignment in the current repository. You must inspect, implement, test, refine, and package the project. **Do not stop after planning, do not leave core features unfinished, and do not claim completion without satisfying the checklist at the end.**
+
+
+## Reference Website
+
+
+https://airbnb-clone-umber-two.vercel.app
+
+
+The reference website is the single source of truth. Reproduce its visual appearance and behaviour as accurately as possible. Do not create a generic Airbnb-inspired design.
+
+
+## 1. Assignment Requirements
+
+
+Build three desktop views.
+
+
+### A. Listing Page
+
+
+Recreate the complete property listing page, matching:
+- Layout, spacing, alignment, and content width.
+- Typography, font weights, colours, borders, and shadows.
+- Header, navigation, property details, icons, buttons, and image gallery.
+- Image order, aspect ratios, cropping, and rounded corners.
+- Hover states, scrolling, sticky elements, and transitions.
+
+
+### B. Photo Tour
+
+
+Implement the full-screen photo gallery, opened through **Show all photos** or the appropriate hero-image interaction.
+
+
+Match the reference's:
+- Gallery layout and image dimensions.
+- Photo order, spacing, cropping, and room groupings.
+- Headings, captions, navigation, and scrolling.
+- Close behaviour, animations, and transitions.
+
+
+### C. Lightbox
+
+
+Implement the single-photo viewer, opened by clicking a gallery image.
+
+
+Requirements:
+- Display the selected image prominently.
+- Provide functional previous and next buttons.
+- Support left/right arrow-key navigation.
+- Implement closing controls and Escape-key dismissal where appropriate.
+- Keep image indices consistent across the gallery.
+- Match the reference's background, positioning, image sizing, and transitions.
+- Manage keyboard focus and background scrolling appropriately.
+
+
+**Desktop only. Mobile implementation is not required.**
+
+
+## 2. Inspect Before Coding
+
+
+First inspect the existing repository, package.json, framework, dependencies, source files, and configuration. Preserve useful existing code and follow the project's conventions.
+
+
+Then inspect the reference website in a browser, if browser tools are available. Examine the entire listing page and both overlays. Record the visual structure, interactions, assets, and relevant viewport dimensions.
+
+
+Do not rely solely on the assignment screenshots. If the reference is inaccessible, state this limitation and work from the available evidence without claiming verified pixel-perfect accuracy.
+
+
+## 3. Implementation
+
+
+Use the existing stack where practical. React, Next.js, or another suitable existing frontend framework is acceptable. A backend is optional; keep the implementation focused on the required interface.
+
+
+- Build reusable components.
+- Maintain a centralised gallery data structure.
+- Keep state management predictable.
+- Use suitable, accessible images and icons.
+- Avoid arbitrary placeholders when appropriate assets can be identified.
+- Do not copy or directly lift and shift the reference website's source code. Create an original implementation based on visual and behavioural inspection.
+- Implement all visible controls properly.
+- Match the reference's layout, spacing, typography, colours, imagery, hover states, transitions, scrolling, and overlay behaviour.
+- Use semantic HTML, accessible labels, visible keyboard focus, logical navigation, and correct focus management for overlays.
+
+
+## 4. Visual Verification
+
+
+Visual fidelity is a primary evaluation criterion.
+
+
+Use this iterative workflow:
+
+
+1. Inspect the reference.
+2. Implement the corresponding UI.
+3. Run the local application.
+4. Compare reference and local screenshots at the same viewport size.
+5. Identify visual differences.
+6. Fix the most significant mismatches.
+7. Repeat for all three views.
+
+
+Pay particular attention to image proportions, page width, horizontal alignment, vertical spacing, font sizes, line wrapping, modal dimensions, and controls.
+
+
+Do not consider the task complete simply because the application compiles.
+
+
+## 5. AI Workflow and Agent Configuration
+
+
+The assignment evaluates modern AI-assisted development, including coding agents, sub-agents, skills, prompts, and configuration.
+
+
+Inspect the installed OpenCode version and supported configuration format. Create focused, valid configuration files for the available agent/sub-agent/skill system.
+
+
+Where supported, establish:
+- A primary implementation agent.
+- A UI and visual-fidelity review agent.
+- A testing and accessibility review agent.
+- Reusable project instructions or skills.
+
+
+Keep the workflow focused and avoid unnecessary complexity. Include all relevant configuration files in the submission. Never expose secrets or credentials.
+
+
+Maintain a record of the actual prompts used during development. Do not fabricate prompt history or claim that a sub-agent ran if it did not.
+
+
+## 6. Architecture Diagram
+
+
+Create a separate high-level architecture diagram for a production-scale vacation-rental marketplace.
+
+
+Illustrate the scaling strategy for:
+- Frontend delivery.
+- Backend/API services.
+- Property and booking databases.
+- Image and media storage.
+- Search infrastructure.
+- Caching and CDN.
+- Deployment and hosting.
+- Relevant external integrations.
+
+
+Show major components and data flows. Include sensible scaling considerations such as caching, search indexing, media delivery, and booking consistency.
+
+
+Export the diagram as a readable PNG, SVG, or PDF. This is an architectural design deliverable; do not build an unnecessary production backend for the clone.
+
+
+## 7. Testing
+
+
+Run the application and verify:
+- The listing page renders correctly.
+- Show all photos opens the Photo Tour.
+- Hero-image interactions match the reference.
+- Gallery images open the correct Lightbox image.
+- Previous/next controls work.
+- Left/right arrow keys work.
+- Closing overlays restores the expected state.
+- Keyboard focus and Escape behaviour work where applicable.
+- Images load correctly.
+- No avoidable console errors remain.
+
+
+Run the available lint, type-check, and production build commands. Use browser automation or screenshot comparison if available. Fix discovered problems.
+
+
+Only report tests that were actually executed. Distinguish between tests that passed, failed, and could not be run.
+
+
+## 8. Required Deliverables
+
+
+Prepare:
+
+
+1. Complete project source code.
+2. Architecture diagram as an image or PDF.
+3. OpenCode agent/sub-agent/skill configuration files.
+4. The actual sequence of prompts used for AI-assisted development.
+5. A README with setup instructions, run commands, implementation details, and limitations.
+6. A ZIP archive containing the source code and architecture diagram, ready for submission.
+
+
+Exclude `node_modules`, build caches, unnecessary generated files, and secrets from the ZIP.
+
+
+**Do not push the code to a public GitHub repository.**
+
+
+## 9. Execution Order
+
+
+**Phase 1 — Discovery**
+- Inspect the repository and reference website.
+- Identify the stack, existing code, assets, and interactions.
+- Establish a baseline for visual comparison.
+
+
+**Phase 2 — Implementation**
+- Implement the Listing Page.
+- Implement the Photo Tour.
+- Implement the Lightbox.
+- Complete keyboard controls, accessibility, and transitions.
+
+
+**Phase 3 — Verification**
+- Run the application.
+- Compare screenshots against the reference.
+- Test all interactive states.
+- Fix visual, functional, and technical issues.
+
+
+**Phase 4 — Deliverables**
+- Create the architecture diagram.
+- Add valid OpenCode configuration files.
+- Save the actual prompt history.
+- Write the README.
+- Package the final project into a ZIP archive.
+
+
+**Phase 5 — Final audit**
+- Execute the strict completion checklist below.
+- Fix every unmet requirement that can reasonably be addressed.
+- Verify that the final ZIP exists and contains the required deliverables.
+- Produce an honest final report.
+
+
+Do not stop after producing a plan. Perform the work using the tools available in the current environment.
+
+
+---
+
+
+# 10. STRICT COMPLETION CHECKLIST
+
+
+This checklist is mandatory. Treat each item as a separate acceptance criterion. Do not mark an item complete merely because related code exists.
+
+
+Use `[x]` only when the requirement has been verified. Use `[ ]` for incomplete or unverified items. If an item cannot be completed because of an external limitation, document the exact reason and the attempted workaround.
+
+
+## A. Repository and reference inspection
+
+
+- [ ] Inspected the current working directory and existing project structure.
+- [ ] Inspected `package.json`, scripts, dependencies, and framework configuration.
+- [ ] Preserved useful existing code and avoided unrelated destructive changes.
+- [ ] Opened the reference website or explicitly documented why it was inaccessible.
+- [ ] Inspected the Listing Page, Photo Tour, and Lightbox.
+- [ ] Identified available images, icons, typography, layout measurements, and interaction patterns.
+- [ ] Recorded any reference details that could not be verified.
+
+
+## B. Listing Page
+
+
+- [ ] The complete desktop Listing Page is implemented.
+- [ ] Header and navigation match the reference.
+- [ ] Main content width and horizontal alignment match the reference.
+- [ ] Property title, location, ratings, host details, and other visible metadata are represented accurately where present.
+- [ ] Hero image gallery has the correct structure, image order, dimensions, gaps, and cropping.
+- [ ] Typography, line wrapping, font weights, and spacing have been compared with the reference.
+- [ ] Colours, borders, shadows, radii, and separators have been checked.
+- [ ] All visible buttons and links behave appropriately.
+- [ ] Hover, focus, sticky, and scrolling behaviour have been checked.
+- [ ] No major section visible in the reference has been omitted.
+
+
+## C. Photo Tour
+
+
+- [ ] The Photo Tour opens from Show all photos.
+- [ ] Hero-image interactions match the reference.
+- [ ] The correct gallery images appear in the correct order.
+- [ ] Layout, dimensions, spacing, and image cropping have been checked.
+- [ ] Headings, captions, and room groupings are reproduced where present.
+- [ ] Scrolling works correctly.
+- [ ] Selecting a photo opens the correct image in the Lightbox.
+- [ ] Closing the Photo Tour returns to the expected state.
+- [ ] Transitions and navigation have been checked.
+
+
+## D. Lightbox
+
+
+- [ ] Clicking a gallery image opens the Lightbox.
+- [ ] The correct image is initially displayed.
+- [ ] Previous and next buttons work.
+- [ ] Left and right arrow keys work.
+- [ ] Image indices remain consistent across the gallery.
+- [ ] First-image and last-image behaviour matches the reference.
+- [ ] Closing controls work.
+- [ ] Escape closes the overlay if appropriate.
+- [ ] Background scrolling and interaction are handled correctly.
+- [ ] Keyboard focus is managed appropriately.
+- [ ] Image sizing, background, controls, and transitions have been visually checked.
+
+
+## E. Visual quality
+
+
+- [ ] The local application and reference were compared at the same desktop viewport size.
+- [ ] Screenshots were captured for the Listing Page.
+- [ ] Screenshots were captured for the Photo Tour.
+- [ ] Screenshots were captured for the Lightbox.
+- [ ] Major layout discrepancies have been corrected.
+- [ ] Image selection, cropping, and proportions have been checked.
+- [ ] Typography, spacing, and content alignment have been refined.
+- [ ] Interactive states have been reviewed.
+- [ ] No obvious placeholder elements remain where real content or suitable assets are available.
+- [ ] Any remaining visual discrepancies are documented honestly.
+
+
+## F. Technical quality and accessibility
+
+
+- [ ] The application starts successfully.
+- [ ] Required dependencies are documented and installable.
+- [ ] Gallery state and navigation are consistent.
+- [ ] Components and files are organised sensibly.
+- [ ] Semantic HTML and accessible labels are present.
+- [ ] Keyboard focus is visible.
+- [ ] Overlay focus handling is appropriate.
+- [ ] Broken image references have been checked.
+- [ ] Browser console errors have been checked.
+- [ ] Lint command was run if available.
+- [ ] Type checking was run if available.
+- [ ] Production build was run if available.
+- [ ] Failures and unexecuted checks are documented.
+
+
+## G. OpenCode workflow
+
+
+- [ ] The installed OpenCode version and supported configuration format were inspected.
+- [ ] Agent/sub-agent configuration files were created where supported.
+- [ ] Reusable skills or project instructions were added where appropriate.
+- [ ] Configuration syntax was validated where possible.
+- [ ] The prompt history contains the actual prompts used.
+- [ ] No secrets or credentials were included.
+- [ ] The workflow remains focused and understandable.
+
+
+## H. Architecture diagram
+
+
+- [ ] A production-scale vacation-rental marketplace architecture was designed.
+- [ ] Frontend delivery is represented.
+- [ ] Backend/API services are represented.
+- [ ] Property and booking data storage are represented.
+- [ ] Media storage and CDN are represented.
+- [ ] Search infrastructure is represented.
+- [ ] Caching and scaling considerations are represented.
+- [ ] Deployment and hosting are represented.
+- [ ] Major data flows are clearly labelled.
+- [ ] The diagram is readable and exported as PNG, SVG, or PDF.
+- [ ] The diagram is included in the final submission archive.
+
+
+## I. Documentation and packaging
+
+
+- [ ] A README exists with installation and run instructions.
+- [ ] The README documents the implementation and known limitations.
+- [ ] The required source files are included.
+- [ ] Agent/sub-agent/skill configuration files are included.
+- [ ] The actual prompt history is included.
+- [ ] The architecture diagram is included.
+- [ ] Unnecessary build artefacts and `node_modules` are excluded.
+- [ ] Secrets and local credential files are excluded.
+- [ ] The final ZIP archive was successfully created.
+- [ ] The ZIP archive's contents were inspected.
+- [ ] The archive contains everything needed for the assignment submission.
+- [ ] No public GitHub repository was created or used for publishing the assignment.
+
+
+## J. Final acceptance gate
+
+
+The project is considered **complete only when all applicable checklist items have been verified**.
+
+
+Before reporting completion:
+
+
+1. Review every unchecked item.
+2. Fix all outstanding requirements that can reasonably be addressed.
+3. Re-run affected tests after making changes.
+4. Verify the final deliverables and ZIP archive.
+5. Clearly distinguish verified completion from limitations caused by unavailable tools, inaccessible references, or other external constraints.
+6. Never fabricate test results, screenshot comparisons, agent execution, or successful packaging.
+
+
+If any item remains incomplete, report it explicitly and explain what remains to be done. Do not describe the entire assignment as fully complete if required deliverables or core functionality are missing.
+
+
+---
+
+
+# 11. Final Report
+
+
+When finished, provide:
+
+
+1. Features implemented.
+2. Main files and component locations.
+3. Agent/sub-agent/skill configuration files created.
+4. Architecture diagram location.
+5. Prompt history and README locations.
+6. Final ZIP archive location.
+7. Tests and build commands executed, with actual results.
+8. The completion checklist with verified items marked `[x]` and incomplete or unverified items marked `[ ]`.
+9. Remaining discrepancies or limitations.
+
+
+Prioritise visual accuracy, behavioural parity, accessibility, and a complete submission over unnecessary features.
+
+
+**Final success criterion:** Deliver an original, functional desktop reproduction of the reference website, including both overlay views, the architecture diagram, valid AI workflow configuration, actual prompt history, documentation, and a verified ZIP archive.
+
+
+========================================================================
+SESSION: New session - 2026-10-22T16:56:50.322Z
+Started: 2026-10-22 22:26   (id: ses_e9b74be6dffer0LxJlj4K0i4IL)
+========================================================================
+
+--- PROMPT 1 (2026-10-22 22:28:37) ---
+# OpenCode Master Prompt — Playpower Labs Airbnb Clone
+
+You are an expert frontend engineer, UI replication specialist, and AI-native developer. Complete the Playpower Labs Airbnb-Clone take-home assignment in the current repository. You must inspect, implement, test, refine, and package the project. **Do not stop after planning, do not leave core features unfinished, and do not claim completion without satisfying the checklist at the end.**
+
+
+## Reference Website
+
+
+https://airbnb-clone-umber-two.vercel.app
+
+
+The reference website is the single source of truth. Reproduce its visual appearance and behaviour as accurately as possible. Do not create a generic Airbnb-inspired design.
+
+
+## 1. Assignment Requirements
+
+
+Build three desktop views.
+
+
+### A. Listing Page
+
+
+Recreate the complete property listing page, matching:
+- Layout, spacing, alignment, and content width.
+- Typography, font weights, colours, borders, and shadows.
+- Header, navigation, property details, icons, buttons, and image gallery.
+- Image order, aspect ratios, cropping, and rounded corners.
+- Hover states, scrolling, sticky elements, and transitions.
+
+
+### B. Photo Tour
+
+
+Implement the full-screen photo gallery, opened through **Show all photos** or the appropriate hero-image interaction.
+
+
+Match the reference's:
+- Gallery layout and image dimensions.
+- Photo order, spacing, cropping, and room groupings.
+- Headings, captions, navigation, and scrolling.
+- Close behaviour, animations, and transitions.
+
+
+### C. Lightbox
+
+
+Implement the single-photo viewer, opened by clicking a gallery image.
+
+
+Requirements:
+- Display the selected image prominently.
+- Provide functional previous and next buttons.
+- Support left/right arrow-key navigation.
+- Implement closing controls and Escape-key dismissal where appropriate.
+- Keep image indices consistent across the gallery.
+- Match the reference's background, positioning, image sizing, and transitions.
+- Manage keyboard focus and background scrolling appropriately.
+
+
+**Desktop only. Mobile implementation is not required.**
+
+
+## 2. Inspect Before Coding
+
+
+First inspect the existing repository, package.json, framework, dependencies, source files, and configuration. Preserve useful existing code and follow the project's conventions.
+
+
+Then inspect the reference website in a browser, if browser tools are available. Examine the entire listing page and both overlays. Record the visual structure, interactions, assets, and relevant viewport dimensions.
+
+
+Do not rely solely on the assignment screenshots. If the reference is inaccessible, state this limitation and work from the available evidence without claiming verified pixel-perfect accuracy.
+
+
+## 3. Implementation
+
+
+Use the existing stack where practical. React, Next.js, or another suitable existing frontend framework is acceptable. A backend is optional; keep the implementation focused on the required interface.
+
+
+- Build reusable components.
+- Maintain a centralised gallery data structure.
+- Keep state management predictable.
+- Use suitable, accessible images and icons.
+- Avoid arbitrary placeholders when appropriate assets can be identified.
+- Do not copy or directly lift and shift the reference website's source code. Create an original implementation based on visual and behavioural inspection.
+- Implement all visible controls properly.
+- Match the reference's layout, spacing, typography, colours, imagery, hover states, transitions, scrolling, and overlay behaviour.
+- Use semantic HTML, accessible labels, visible keyboard focus, logical navigation, and correct focus management for overlays.
+
+
+## 4. Visual Verification
+
+
+Visual fidelity is a primary evaluation criterion.
+
+
+Use this iterative workflow:
+
+
+1. Inspect the reference.
+2. Implement the corresponding UI.
+3. Run the local application.
+4. Compare reference and local screenshots at the same viewport size.
+5. Identify visual differences.
+6. Fix the most significant mismatches.
+7. Repeat for all three views.
+
+
+Pay particular attention to image proportions, page width, horizontal alignment, vertical spacing, font sizes, line wrapping, modal dimensions, and controls.
+
+
+Do not consider the task complete simply because the application compiles.
+
+
+## 5. AI Workflow and Agent Configuration
+
+
+The assignment evaluates modern AI-assisted development, including coding agents, sub-agents, skills, prompts, and configuration.
+
+
+Inspect the installed OpenCode version and supported configuration format. Create focused, valid configuration files for the available agent/sub-agent/skill system.
+
+
+Where supported, establish:
+- A primary implementation agent.
+- A UI and visual-fidelity review agent.
+- A testing and accessibility review agent.
+- Reusable project instructions or skills.
+
+
+Keep the workflow focused and avoid unnecessary complexity. Include all relevant configuration files in the submission. Never expose secrets or credentials.
+
+
+Maintain a record of the actual prompts used during development. Do not fabricate prompt history or claim that a sub-agent ran if it did not.
+
+
+## 6. Architecture Diagram
+
+
+Create a separate high-level architecture diagram for a production-scale vacation-rental marketplace.
+
+
+Illustrate the scaling strategy for:
+- Frontend delivery.
+- Backend/API services.
+- Property and booking databases.
+- Image and media storage.
+- Search infrastructure.
+- Caching and CDN.
+- Deployment and hosting.
+- Relevant external integrations.
+
+
+Show major components and data flows. Include sensible scaling considerations such as caching, search indexing, media delivery, and booking consistency.
+
+
+Export the diagram as a readable PNG, SVG, or PDF. This is an architectural design deliverable; do not build an unnecessary production backend for the clone.
+
+
+## 7. Testing
+
+
+Run the application and verify:
+- The listing page renders correctly.
+- Show all photos opens the Photo Tour.
+- Hero-image interactions match the reference.
+- Gallery images open the correct Lightbox image.
+- Previous/next controls work.
+- Left/right arrow keys work.
+- Closing overlays restores the expected state.
+- Keyboard focus and Escape behaviour work where applicable.
+- Images load correctly.
+- No avoidable console errors remain.
+
+
+Run the available lint, type-check, and production build commands. Use browser automation or screenshot comparison if available. Fix discovered problems.
+
+
+Only report tests that were actually executed. Distinguish between tests that passed, failed, and could not be run.
+
+
+## 8. Required Deliverables
+
+
+Prepare:
+
+
+1. Complete project source code.
+2. Architecture diagram as an image or PDF.
+3. OpenCode agent/sub-agent/skill configuration files.
+4. The actual sequence of prompts used for AI-assisted development.
+5. A README with setup instructions, run commands, implementation details, and limitations.
+6. A ZIP archive containing the source code and architecture diagram, ready for submission.
+
+
+Exclude `node_modules`, build caches, unnecessary generated files, and secrets from the ZIP.
+
+
+**Do not push the code to a public GitHub repository.**
+
+
+## 9. Execution Order
+
+
+**Phase 1 — Discovery**
+- Inspect the repository and reference website.
+- Identify the stack, existing code, assets, and interactions.
+- Establish a baseline for visual comparison.
+
+
+**Phase 2 — Implementation**
+- Implement the Listing Page.
+- Implement the Photo Tour.
+- Implement the Lightbox.
+- Complete keyboard controls, accessibility, and transitions.
+
+
+**Phase 3 — Verification**
+- Run the application.
+- Compare screenshots against the reference.
+- Test all interactive states.
+- Fix visual, functional, and technical issues.
+
+
+**Phase 4 — Deliverables**
+- Create the architecture diagram.
+- Add valid OpenCode configuration files.
+- Save the actual prompt history.
+- Write the README.
+- Package the final project into a ZIP archive.
+
+
+**Phase 5 — Final audit**
+- Execute the strict completion checklist below.
+- Fix every unmet requirement that can reasonably be addressed.
+- Verify that the final ZIP exists and contains the required deliverables.
+- Produce an honest final report.
+
+
+Do not stop after producing a plan. Perform the work using the tools available in the current environment.
+
+
+---
+
+
+# 10. STRICT COMPLETION CHECKLIST
+
+
+This checklist is mandatory. Treat each item as a separate acceptance criterion. Do not mark an item complete merely because related code exists.
+
+
+Use `[x]` only when the requirement has been verified. Use `[ ]` for incomplete or unverified items. If an item cannot be completed because of an external limitation, document the exact reason and the attempted workaround.
+
+
+## A. Repository and reference inspection
+
+
+- [ ] Inspected the current working directory and existing project structure.
+- [ ] Inspected `package.json`, scripts, dependencies, and framework configuration.
+- [ ] Preserved useful existing code and avoided unrelated destructive changes.
+- [ ] Opened the reference website or explicitly documented why it was inaccessible.
+- [ ] Inspected the Listing Page, Photo Tour, and Lightbox.
+- [ ] Identified available images, icons, typography, layout measurements, and interaction patterns.
+- [ ] Recorded any reference details that could not be verified.
+
+
+## B. Listing Page
+
+
+- [ ] The complete desktop Listing Page is implemented.
+- [ ] Header and navigation match the reference.
+- [ ] Main content width and horizontal alignment match the reference.
+- [ ] Property title, location, ratings, host details, and other visible metadata are represented accurately where present.
+- [ ] Hero image gallery has the correct structure, image order, dimensions, gaps, and cropping.
+- [ ] Typography, line wrapping, font weights, and spacing have been compared with the reference.
+- [ ] Colours, borders, shadows, radii, and separators have been checked.
+- [ ] All visible buttons and links behave appropriately.
+- [ ] Hover, focus, sticky, and scrolling behaviour have been checked.
+- [ ] No major section visible in the reference has been omitted.
+
+
+## C. Photo Tour
+
+
+- [ ] The Photo Tour opens from Show all photos.
+- [ ] Hero-image interactions match the reference.
+- [ ] The correct gallery images appear in the correct order.
+- [ ] Layout, dimensions, spacing, and image cropping have been checked.
+- [ ] Headings, captions, and room groupings are reproduced where present.
+- [ ] Scrolling works correctly.
+- [ ] Selecting a photo opens the correct image in the Lightbox.
+- [ ] Closing the Photo Tour returns to the expected state.
+- [ ] Transitions and navigation have been checked.
+
+
+## D. Lightbox
+
+
+- [ ] Clicking a gallery image opens the Lightbox.
+- [ ] The correct image is initially displayed.
+- [ ] Previous and next buttons work.
+- [ ] Left and right arrow keys work.
+- [ ] Image indices remain consistent across the gallery.
+- [ ] First-image and last-image behaviour matches the reference.
+- [ ] Closing controls work.
+- [ ] Escape closes the overlay if appropriate.
+- [ ] Background scrolling and interaction are handled correctly.
+- [ ] Keyboard focus is managed appropriately.
+- [ ] Image sizing, background, controls, and transitions have been visually checked.
+
+
+## E. Visual quality
+
+
+- [ ] The local application and reference were compared at the same desktop viewport size.
+- [ ] Screenshots were captured for the Listing Page.
+- [ ] Screenshots were captured for the Photo Tour.
+- [ ] Screenshots were captured for the Lightbox.
+- [ ] Major layout discrepancies have been corrected.
+- [ ] Image selection, cropping, and proportions have been checked.
+- [ ] Typography, spacing, and content alignment have been refined.
+- [ ] Interactive states have been reviewed.
+- [ ] No obvious placeholder elements remain where real content or suitable assets are available.
+- [ ] Any remaining visual discrepancies are documented honestly.
+
+
+## F. Technical quality and accessibility
+
+
+- [ ] The application starts successfully.
+- [ ] Required dependencies are documented and installable.
+- [ ] Gallery state and navigation are consistent.
+- [ ] Components and files are organised sensibly.
+- [ ] Semantic HTML and accessible labels are present.
+- [ ] Keyboard focus is visible.
+- [ ] Overlay focus handling is appropriate.
+- [ ] Broken image references have been checked.
+- [ ] Browser console errors have been checked.
+- [ ] Lint command was run if available.
+- [ ] Type checking was run if available.
+- [ ] Production build was run if available.
+- [ ] Failures and unexecuted checks are documented.
+
+
+## G. OpenCode workflow
+
+
+- [ ] The installed OpenCode version and supported configuration format were inspected.
+- [ ] Agent/sub-agent configuration files were created where supported.
+- [ ] Reusable skills or project instructions were added where appropriate.
+- [ ] Configuration syntax was validated where possible.
+- [ ] The prompt history contains the actual prompts used.
+- [ ] No secrets or credentials were included.
+- [ ] The workflow remains focused and understandable.
+
+
+## H. Architecture diagram
+
+
+- [ ] A production-scale vacation-rental marketplace architecture was designed.
+- [ ] Frontend delivery is represented.
+- [ ] Backend/API services are represented.
+- [ ] Property and booking data storage are represented.
+- [ ] Media storage and CDN are represented.
+- [ ] Search infrastructure is represented.
+- [ ] Caching and scaling considerations are represented.
+- [ ] Deployment and hosting are represented.
+- [ ] Major data flows are clearly labelled.
+- [ ] The diagram is readable and exported as PNG, SVG, or PDF.
+- [ ] The diagram is included in the final submission archive.
+
+
+## I. Documentation and packaging
+
+
+- [ ] A README exists with installation and run instructions.
+- [ ] The README documents the implementation and known limitations.
+- [ ] The required source files are included.
+- [ ] Agent/sub-agent/skill configuration files are included.
+- [ ] The actual prompt history is included.
+- [ ] The architecture diagram is included.
+- [ ] Unnecessary build artefacts and `node_modules` are excluded.
+- [ ] Secrets and local credential files are excluded.
+- [ ] The final ZIP archive was successfully created.
+- [ ] The ZIP archive's contents were inspected.
+- [ ] The archive contains everything needed for the assignment submission.
+- [ ] No public GitHub repository was created or used for publishing the assignment.
+
+
+## J. Final acceptance gate
+
+
+The project is considered **complete only when all applicable checklist items have been verified**.
+
+
+Before reporting completion:
+
+
+1. Review every unchecked item.
+2. Fix all outstanding requirements that can reasonably be addressed.
+3. Re-run affected tests after making changes.
+4. Verify the final deliverables and ZIP archive.
+5. Clearly distinguish verified completion from limitations caused by unavailable tools, inaccessible references, or other external constraints.
+6. Never fabricate test results, screenshot comparisons, agent execution, or successful packaging.
+
+
+If any item remains incomplete, report it explicitly and explain what remains to be done. Do not describe the entire assignment as fully complete if required deliverables or core functionality are missing.
+
+
+---
+
+
+# 11. Final Report
+
+
+When finished, provide:
+
+
+1. Features implemented.
+2. Main files and component locations.
+3. Agent/sub-agent/skill configuration files created.
+4. Architecture diagram location.
+5. Prompt history and README locations.
+6. Final ZIP archive location.
+7. Tests and build commands executed, with actual results.
+8. The completion checklist with verified items marked `[x]` and incomplete or unverified items marked `[ ]`.
+9. Remaining discrepancies or limitations.
+
+
+Prioritise visual accuracy, behavioural parity, accessibility, and a complete submission over unnecessary features.
+
+
+**Final success criterion:** Deliver an original, functional desktop reproduction of the reference website, including both overlay views, the architecture diagram, valid AI workflow configuration, actual prompt history, documentation, and a verified ZIP archive.
+
+
+========================================================================
+SESSION: Airbnb clone replication assignment
+Started: 2026-10-22 22:35   (id: ses_e9b6ce2ffffe6xA6XcTz3RfW97)
+========================================================================
+
+--- PROMPT 1 (2026-10-22 22:35:25) ---
+# OpenCode Master Prompt — Playpower Labs Airbnb Clone
+
+You are an expert frontend engineer, UI replication specialist, and AI-native developer. Complete the Playpower Labs Airbnb-Clone take-home assignment in the current repository. You must inspect, implement, test, refine, and package the project. **Do not stop after planning, do not leave core features unfinished, and do not claim completion without satisfying the checklist at the end.**
+
+
+## Reference Website
+
+
+https://airbnb-clone-umber-two.vercel.app
+
+
+The reference website is the single source of truth. Reproduce its visual appearance and behaviour as accurately as possible. Do not create a generic Airbnb-inspired design.
+
+
+## 1. Assignment Requirements
+
+
+Build three desktop views.
+
+
+### A. Listing Page
+
+
+Recreate the complete property listing page, matching:
+- Layout, spacing, alignment, and content width.
+- Typography, font weights, colours, borders, and shadows.
+- Header, navigation, property details, icons, buttons, and image gallery.
+- Image order, aspect ratios, cropping, and rounded corners.
+- Hover states, scrolling, sticky elements, and transitions.
+
+
+### B. Photo Tour
+
+
+Implement the full-screen photo gallery, opened through **Show all photos** or the appropriate hero-image interaction.
+
+
+Match the reference's:
+- Gallery layout and image dimensions.
+- Photo order, spacing, cropping, and room groupings.
+- Headings, captions, navigation, and scrolling.
+- Close behaviour, animations, and transitions.
+
+
+### C. Lightbox
+
+
+Implement the single-photo viewer, opened by clicking a gallery image.
+
+
+Requirements:
+- Display the selected image prominently.
+- Provide functional previous and next buttons.
+- Support left/right arrow-key navigation.
+- Implement closing controls and Escape-key dismissal where appropriate.
+- Keep image indices consistent across the gallery.
+- Match the reference's background, positioning, image sizing, and transitions.
+- Manage keyboard focus and background scrolling appropriately.
+
+
+**Desktop only. Mobile implementation is not required.**
+
+
+## 2. Inspect Before Coding
+
+
+First inspect the existing repository, package.json, framework, dependencies, source files, and configuration. Preserve useful existing code and follow the project's conventions.
+
+
+Then inspect the reference website in a browser, if browser tools are available. Examine the entire listing page and both overlays. Record the visual structure, interactions, assets, and relevant viewport dimensions.
+
+
+Do not rely solely on the assignment screenshots. If the reference is inaccessible, state this limitation and work from the available evidence without claiming verified pixel-perfect accuracy.
+
+
+## 3. Implementation
+
+
+Use the existing stack where practical. React, Next.js, or another suitable existing frontend framework is acceptable. A backend is optional; keep the implementation focused on the required interface.
+
+
+- Build reusable components.
+- Maintain a centralised gallery data structure.
+- Keep state management predictable.
+- Use suitable, accessible images and icons.
+- Avoid arbitrary placeholders when appropriate assets can be identified.
+- Do not copy or directly lift and shift the reference website's source code. Create an original implementation based on visual and behavioural inspection.
+- Implement all visible controls properly.
+- Match the reference's layout, spacing, typography, colours, imagery, hover states, transitions, scrolling, and overlay behaviour.
+- Use semantic HTML, accessible labels, visible keyboard focus, logical navigation, and correct focus management for overlays.
+
+
+## 4. Visual Verification
+
+
+Visual fidelity is a primary evaluation criterion.
+
+
+Use this iterative workflow:
+
+
+1. Inspect the reference.
+2. Implement the corresponding UI.
+3. Run the local application.
+4. Compare reference and local screenshots at the same viewport size.
+5. Identify visual differences.
+6. Fix the most significant mismatches.
+7. Repeat for all three views.
+
+
+Pay particular attention to image proportions, page width, horizontal alignment, vertical spacing, font sizes, line wrapping, modal dimensions, and controls.
+
+
+Do not consider the task complete simply because the application compiles.
+
+
+## 5. AI Workflow and Agent Configuration
+
+
+The assignment evaluates modern AI-assisted development, including coding agents, sub-agents, skills, prompts, and configuration.
+
+
+Inspect the installed OpenCode version and supported configuration format. Create focused, valid configuration files for the available agent/sub-agent/skill system.
+
+
+Where supported, establish:
+- A primary implementation agent.
+- A UI and visual-fidelity review agent.
+- A testing and accessibility review agent.
+- Reusable project instructions or skills.
+
+
+Keep the workflow focused and avoid unnecessary complexity. Include all relevant configuration files in the submission. Never expose secrets or credentials.
+
+
+Maintain a record of the actual prompts used during development. Do not fabricate prompt history or claim that a sub-agent ran if it did not.
+
+
+## 6. Architecture Diagram
+
+
+Create a separate high-level architecture diagram for a production-scale vacation-rental marketplace.
+
+
+Illustrate the scaling strategy for:
+- Frontend delivery.
+- Backend/API services.
+- Property and booking databases.
+- Image and media storage.
+- Search infrastructure.
+- Caching and CDN.
+- Deployment and hosting.
+- Relevant external integrations.
+
+
+Show major components and data flows. Include sensible scaling considerations such as caching, search indexing, media delivery, and booking consistency.
+
+
+Export the diagram as a readable PNG, SVG, or PDF. This is an architectural design deliverable; do not build an unnecessary production backend for the clone.
+
+
+## 7. Testing
+
+
+Run the application and verify:
+- The listing page renders correctly.
+- Show all photos opens the Photo Tour.
+- Hero-image interactions match the reference.
+- Gallery images open the correct Lightbox image.
+- Previous/next controls work.
+- Left/right arrow keys work.
+- Closing overlays restores the expected state.
+- Keyboard focus and Escape behaviour work where applicable.
+- Images load correctly.
+- No avoidable console errors remain.
+
+
+Run the available lint, type-check, and production build commands. Use browser automation or screenshot comparison if available. Fix discovered problems.
+
+
+Only report tests that were actually executed. Distinguish between tests that passed, failed, and could not be run.
+
+
+## 8. Required Deliverables
+
+
+Prepare:
+
+
+1. Complete project source code.
+2. Architecture diagram as an image or PDF.
+3. OpenCode agent/sub-agent/skill configuration files.
+4. The actual sequence of prompts used for AI-assisted development.
+5. A README with setup instructions, run commands, implementation details, and limitations.
+6. A ZIP archive containing the source code and architecture diagram, ready for submission.
+
+
+Exclude `node_modules`, build caches, unnecessary generated files, and secrets from the ZIP.
+
+
+**Do not push the code to a public GitHub repository.**
+
+
+## 9. Execution Order
+
+
+**Phase 1 — Discovery**
+- Inspect the repository and reference website.
+- Identify the stack, existing code, assets, and interactions.
+- Establish a baseline for visual comparison.
+
+
+**Phase 2 — Implementation**
+- Implement the Listing Page.
+- Implement the Photo Tour.
+- Implement the Lightbox.
+- Complete keyboard controls, accessibility, and transitions.
+
+
+**Phase 3 — Verification**
+- Run the application.
+- Compare screenshots against the reference.
+- Test all interactive states.
+- Fix visual, functional, and technical issues.
+
+
+**Phase 4 — Deliverables**
+- Create the architecture diagram.
+- Add valid OpenCode configuration files.
+- Save the actual prompt history.
+- Write the README.
+- Package the final project into a ZIP archive.
+
+
+**Phase 5 — Final audit**
+- Execute the strict completion checklist below.
+- Fix every unmet requirement that can reasonably be addressed.
+- Verify that the final ZIP exists and contains the required deliverables.
+- Produce an honest final report.
+
+
+Do not stop after producing a plan. Perform the work using the tools available in the current environment.
+
+
+---
+
+
+# 10. STRICT COMPLETION CHECKLIST
+
+
+This checklist is mandatory. Treat each item as a separate acceptance criterion. Do not mark an item complete merely because related code exists.
+
+
+Use `[x]` only when the requirement has been verified. Use `[ ]` for incomplete or unverified items. If an item cannot be completed because of an external limitation, document the exact reason and the attempted workaround.
+
+
+## A. Repository and reference inspection
+
+
+- [ ] Inspected the current working directory and existing project structure.
+- [ ] Inspected `package.json`, scripts, dependencies, and framework configuration.
+- [ ] Preserved useful existing code and avoided unrelated destructive changes.
+- [ ] Opened the reference website or explicitly documented why it was inaccessible.
+- [ ] Inspected the Listing Page, Photo Tour, and Lightbox.
+- [ ] Identified available images, icons, typography, layout measurements, and interaction patterns.
+- [ ] Recorded any reference details that could not be verified.
+
+
+## B. Listing Page
+
+
+- [ ] The complete desktop Listing Page is implemented.
+- [ ] Header and navigation match the reference.
+- [ ] Main content width and horizontal alignment match the reference.
+- [ ] Property title, location, ratings, host details, and other visible metadata are represented accurately where present.
+- [ ] Hero image gallery has the correct structure, image order, dimensions, gaps, and cropping.
+- [ ] Typography, line wrapping, font weights, and spacing have been compared with the reference.
+- [ ] Colours, borders, shadows, radii, and separators have been checked.
+- [ ] All visible buttons and links behave appropriately.
+- [ ] Hover, focus, sticky, and scrolling behaviour have been checked.
+- [ ] No major section visible in the reference has been omitted.
+
+
+## C. Photo Tour
+
+
+- [ ] The Photo Tour opens from Show all photos.
+- [ ] Hero-image interactions match the reference.
+- [ ] The correct gallery images appear in the correct order.
+- [ ] Layout, dimensions, spacing, and image cropping have been checked.
+- [ ] Headings, captions, and room groupings are reproduced where present.
+- [ ] Scrolling works correctly.
+- [ ] Selecting a photo opens the correct image in the Lightbox.
+- [ ] Closing the Photo Tour returns to the expected state.
+- [ ] Transitions and navigation have been checked.
+
+
+## D. Lightbox
+
+
+- [ ] Clicking a gallery image opens the Lightbox.
+- [ ] The correct image is initially displayed.
+- [ ] Previous and next buttons work.
+- [ ] Left and right arrow keys work.
+- [ ] Image indices remain consistent across the gallery.
+- [ ] First-image and last-image behaviour matches the reference.
+- [ ] Closing controls work.
+- [ ] Escape closes the overlay if appropriate.
+- [ ] Background scrolling and interaction are handled correctly.
+- [ ] Keyboard focus is managed appropriately.
+- [ ] Image sizing, background, controls, and transitions have been visually checked.
+
+
+## E. Visual quality
+
+
+- [ ] The local application and reference were compared at the same desktop viewport size.
+- [ ] Screenshots were captured for the Listing Page.
+- [ ] Screenshots were captured for the Photo Tour.
+- [ ] Screenshots were captured for the Lightbox.
+- [ ] Major layout discrepancies have been corrected.
+- [ ] Image selection, cropping, and proportions have been checked.
+- [ ] Typography, spacing, and content alignment have been refined.
+- [ ] Interactive states have been reviewed.
+- [ ] No obvious placeholder elements remain where real content or suitable assets are available.
+- [ ] Any remaining visual discrepancies are documented honestly.
+
+
+## F. Technical quality and accessibility
+
+
+- [ ] The application starts successfully.
+- [ ] Required dependencies are documented and installable.
+- [ ] Gallery state and navigation are consistent.
+- [ ] Components and files are organised sensibly.
+- [ ] Semantic HTML and accessible labels are present.
+- [ ] Keyboard focus is visible.
+- [ ] Overlay focus handling is appropriate.
+- [ ] Broken image references have been checked.
+- [ ] Browser console errors have been checked.
+- [ ] Lint command was run if available.
+- [ ] Type checking was run if available.
+- [ ] Production build was run if available.
+- [ ] Failures and unexecuted checks are documented.
+
+
+## G. OpenCode workflow
+
+
+- [ ] The installed OpenCode version and supported configuration format were inspected.
+- [ ] Agent/sub-agent configuration files were created where supported.
+- [ ] Reusable skills or project instructions were added where appropriate.
+- [ ] Configuration syntax was validated where possible.
+- [ ] The prompt history contains the actual prompts used.
+- [ ] No secrets or credentials were included.
+- [ ] The workflow remains focused and understandable.
+
+
+## H. Architecture diagram
+
+
+- [ ] A production-scale vacation-rental marketplace architecture was designed.
+- [ ] Frontend delivery is represented.
+- [ ] Backend/API services are represented.
+- [ ] Property and booking data storage are represented.
+- [ ] Media storage and CDN are represented.
+- [ ] Search infrastructure is represented.
+- [ ] Caching and scaling considerations are represented.
+- [ ] Deployment and hosting are represented.
+- [ ] Major data flows are clearly labelled.
+- [ ] The diagram is readable and exported as PNG, SVG, or PDF.
+- [ ] The diagram is included in the final submission archive.
+
+
+## I. Documentation and packaging
+
+
+- [ ] A README exists with installation and run instructions.
+- [ ] The README documents the implementation and known limitations.
+- [ ] The required source files are included.
+- [ ] Agent/sub-agent/skill configuration files are included.
+- [ ] The actual prompt history is included.
+- [ ] The architecture diagram is included.
+- [ ] Unnecessary build artefacts and `node_modules` are excluded.
+- [ ] Secrets and local credential files are excluded.
+- [ ] The final ZIP archive was successfully created.
+- [ ] The ZIP archive's contents were inspected.
+- [ ] The archive contains everything needed for the assignment submission.
+- [ ] No public GitHub repository was created or used for publishing the assignment.
+
+
+## J. Final acceptance gate
+
+
+The project is considered **complete only when all applicable checklist items have been verified**.
+
+
+Before reporting completion:
+
+
+1. Review every unchecked item.
+2. Fix all outstanding requirements that can reasonably be addressed.
+3. Re-run affected tests after making changes.
+4. Verify the final deliverables and ZIP archive.
+5. Clearly distinguish verified completion from limitations caused by unavailable tools, inaccessible references, or other external constraints.
+6. Never fabricate test results, screenshot comparisons, agent execution, or successful packaging.
+
+
+If any item remains incomplete, report it explicitly and explain what remains to be done. Do not describe the entire assignment as fully complete if required deliverables or core functionality are missing.
+
+
+---
+
+
+# 11. Final Report
+
+
+When finished, provide:
+
+
+1. Features implemented.
+2. Main files and component locations.
+3. Agent/sub-agent/skill configuration files created.
+4. Architecture diagram location.
+5. Prompt history and README locations.
+6. Final ZIP archive location.
+7. Tests and build commands executed, with actual results.
+8. The completion checklist with verified items marked `[x]` and incomplete or unverified items marked `[ ]`.
+9. Remaining discrepancies or limitations.
+
+
+Prioritise visual accuracy, behavioural parity, accessibility, and a complete submission over unnecessary features.
+
+
+**Final success criterion:** Deliver an original, functional desktop reproduction of the reference website, including both overlay views, the architecture diagram, valid AI workflow configuration, actual prompt history, documentation, and a verified ZIP archive.
+
+--- PROMPT 2 (2026-10-23 00:39:10) ---
+continue start writing code
+
+--- PROMPT 3 (2026-10-23 00:51:30) ---
+ok lets try this again can u read a pdf?
+
+
+========================================================================
+SESSION: PDF reading capability question
+Started: 2026-10-23 00:52   (id: ses_e9aeefa28ffeA4MAiF1AHMBdau)
+========================================================================
+
+--- PROMPT 1 (2026-10-23 00:52:56) ---
+can u read a pdf?
+
+--- PROMPT 2 (2026-10-23 00:53:54) ---
+[attachments: 1 file(s)]
+do this and do it in nextjs ts and start writing code fast and keep refining it until you get the output of the exact website
+
+--- PROMPT 3 (2026-10-23 00:56:29) ---
+Take-Home Task: Airbnb-Clone AppWe’d like you to build a pixel-perfect clone of a real Airbnb listing page. The goal is to assess
+how precisely you can reproduce a polished, production-quality UI, exactly as it looks and
+exactly as it behaves.
+Match the reference exactly, visually and behaviorally. It is the single source of truth, and your
+clone must match it across:
+●
+Visual design: identical layout, spacing, typography, colours, icons, and assets.
+●
+Animations and motion: matching hover and scroll animations, and transitions.
+●
+Interaction and accessibility: keyboard navigation, focus management, and
+accessibility.
+Reference (the exact page to reproduce): https://airbnb-clone-umber-two.vercel.app
+We are looking for AI-native developers. Internally, we use tools like Claude Code, Codex, and
+Cursor heavily in our development workflow, and we encourage you to use AI-assisted
+development for this task as well.
+We do not recommend doing this task without AI usage. Please use the latest premium
+AI models that can be accessed for free or at a substantial discount through legitimate
+sources such as the GitHub Student Developer Pack. With the right approach, it can be
+completed in around 3-4 hours using the latest AI models.
+AI agents and workflows can be used to help with the cloning implementation, any direct
+lift and shift of the codebase from the url could result in lower score or disqualification.
+We have a plagiarism detection mechanism in place. Please ensure that your work is
+original and does not contain any plagiarized content.
+What to Build
+Recreate the Airbnb listing page and its two overlay views exactly as they look and behave at
+the reference. There are three views:
+Screen Expected implementation Reference screenshot
+Listing Page The full property page. Match the
+layout, spacing, typography,
+colours, and interactions exactly.
+Photo Tour Full-screen photo gallery opened
+from Show all photos or any hero
+image.
+Lightbox Single-photo viewer opened from
+any gallery photo with prev/next
+arrows, keyboard ←/→ navigation.
+Match the interactions and
+animations exactly.
+Note: Implement Desktop only; mobile version is not required
+￼
+￼
+￼
+Tech Stack
+You are free to choose the tech stack you are most comfortable with. Suggested options:
+●
+Frontend: React, Next.js, or Angular
+●
+Backend: Node.js or Java
+Backend is optional. You may also choose to store data in frontend/browser storage if that
+keeps your implementation simple and focused. You may use Vercel or any other free hosting
+platform for deployment.
+Architecture Diagram
+Submit a high-level architecture diagram for a production-scale vacation-rental marketplace
+(think Airbnb) alongside your app. The diagram should illustrate your scaling strategy for
+frontend, backend, storage, search, and deployment. Tools like lucid.app or excalidraw are
+recommended.
+What We Will Look At
+●
+Modern AI workflow usage (coding agents, sub-agents, skills, prompts)
+●
+How closely the clone matches the reference, visual fidelity and behavioural parity,
+including animations, transitions, and accessibility
+●
+Production architecture thinking
+●
+AI subagent configs for code quality and project structure
+Please keep the scope focused and do include your sub-agent/skill config files in your
+submission. A clean, complete implementation is better than an over-engineered incomplete
+one.
+Submission (Important: Please do not push the code to a public GitHub repository.)
+Please submit the task as per the instructions shared with you over email. The submission
+must include the following deliverables:
+1. A zipped file containing the code and architecture diagram (image/pdf file).
+2. The sequence of prompts used for AI-assisted development, it might be asked during
+submission.
+
+here is all the text extracted from the pdf
+
+--- PROMPT 4 (2026-10-23 01:37:28) ---
+Continue if you have next steps, or stop and ask for clarification if you are unsure how to proceed.
+
+--- PROMPT 5 (2026-10-23 02:29:16) ---
+Continue if you have next steps, or stop and ask for clarification if you are unsure how to proceed.
+
+--- PROMPT 6 (2026-10-28 16:40:10) ---
+[attachments: 2 file(s)]
+https://airbnb-clone-umber-two.vercel.app
+
+on clicking the reserve button in the header and in the website and also the cupoun claim button , a popup shows up below going you wont be charged yet and thats missing from my website and the images ive attached have the exact order of the more stays nearby and my website should follow the same
+
+
+========================================================================
+SESSION: Current session (Oct 28-29, 2026)
+Started: 2026-10-29 02:02   (id: ses_e7bc91039ffeskRLmnlsqLjGiN)
+========================================================================
+
+--- PROMPT 1 (2026-10-28 16:47:15) ---
+hi
+
+--- PROMPT 2 (2026-10-28 16:50:48) ---
+[attachments: 3 file(s)]
+okay so i need u to make 2 changes to my repo according to the website 
+https://airbnb-clone-umber-two.vercel.app
+
+on clicking the reserve button in the header and wherever it is on the website and also on clicking the claim button, i need a popup which is at the bottom of the image to appear
+
+and the second fix is basically the order of the images should be the same in more stays nearby
+
+--- PROMPT 3 (2026-10-28 18:02:19) ---
+## Error Type
+Console Error
+
+## Error Message
+A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         data-nextraise-extension="2.8.8"
+                        >
+                  ...
+
+
+
+    at html (<anonymous>:null:null)
+    at RootLayout (app/layout.tsx:17:5)
+
+## Code Frame
+  15 | }>) {
+  16 |   return (
+> 17 |     <html lang="en">
+     |     ^
+  18 |       <body>{children}</body>
+  19 |     </html>
+  20 |   );
+
+Next.js version: 16.4.2 (Turbopack)
+
+fix this
+
+--- PROMPT 4 (2026-10-28 18:07:40) ---
+ok now i need you to give me a simple explanation on how you found out the width and height and everythubgf from the real link i gave u
+
+--- PROMPT 5 (2026-10-28 18:21:23) ---
+give me all my prompts that i used rn and before in a text file
+
+--- PROMPT 6 (2026-10-29 02:02:41) ---
+there were more prompts before this session
+
+
+========================================================================
+END OF PROMPTS — 17 prompts across 5 sessions
+========================================================================

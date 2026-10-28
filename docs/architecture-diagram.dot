@@ -1,0 +1,86 @@
+digraph architecture {
+  graph [rankdir=TB, bgcolor="white", fontname="Helvetica", splines=ortho,
+         nodesep=0.30, ranksep=0.50, pad=0.12, newrank=true];
+  node  [shape=plaintext, fontname="Helvetica", fontsize=11];
+  edge  [color="#9aa0a6", penwidth=1.1, arrowsize=0.65];
+
+  /* ---------- runtime ---------- */
+  runtime [label=<
+    <table border="0" cellborder="1" cellspacing="0" cellpadding="7" color="#cfd6df">
+      <tr><td colspan="4" bgcolor="#eceff3"><font point-size="11"><b>Runtime &amp; tooling</b></font></td></tr>
+      <tr>
+        <td bgcolor="#ffffff">Next.js 16.4.2<br/>App Router · Turbopack</td>
+        <td bgcolor="#ffffff">React 19.3.1<br/>client components</td>
+        <td bgcolor="#ffffff">TypeScript 6.0<br/>strict types</td>
+        <td bgcolor="#ffffff">npm<br/>dev · build · start · typecheck</td>
+      </tr>
+    </table>>];
+
+  /* ---------- entry ---------- */
+  entry [label=<
+    <table border="0" cellborder="1" cellspacing="0" cellpadding="7" color="#c7d7ef">
+      <tr><td colspan="3" bgcolor="#e8f0fb"><b>App Router entry</b></td></tr>
+      <tr>
+        <td bgcolor="#ffffff">app/layout.tsx<br/>HTML shell · metadata</td>
+        <td bgcolor="#ffffff">app/page.tsx<br/>route /</td>
+        <td bgcolor="#ffffff">app/globals.css<br/>layout · responsive breakpoints<br/>overlays · toast</td>
+      </tr>
+    </table>>];
+
+  /* ---------- data | orchestrator | assets ---------- */
+  data [label=<
+    <table border="0" cellborder="1" cellspacing="0" cellpadding="6" color="#d3dce6">
+      <tr><td bgcolor="#eef2f6"><b>Static data layer (lib/)</b></td></tr>
+      <tr><td bgcolor="#ffffff">data.ts<br/>listing · reviews · similarStays<br/>highlights · heroImages</td></tr>
+      <tr><td bgcolor="#ffffff">tourData.json<br/>tour categories + room photos</td></tr>
+      <tr><td bgcolor="#ffffff">amenityGroups.json<br/>amenity groups</td></tr>
+      <tr><td bgcolor="#ffffff">icons.ts<br/>inline SVG paths<br/><i>used by UI components</i></td></tr>
+    </table>>];
+
+  app [label=<
+    <table border="0" cellborder="1" cellspacing="0" cellpadding="8" color="#ecd3b3">
+      <tr><td colspan="2" bgcolor="#fdf1e3"><font point-size="11"><b>ListingPage.tsx — client orchestrator</b></font></td></tr>
+      <tr>
+        <td bgcolor="#ffffff" width="185">State<br/>overlay (photo tour / lightbox / amenities)<br/>toast message · saved<br/>sticky nav · carousel page<br/>expanded description &amp; reviews</td>
+        <td bgcolor="#ffffff" width="195">Event handlers<br/>Reserve / Claim → toast<br/>Show all photos → PhotoTour<br/>Amenities → modal<br/>carousel arrows → scroll</td>
+      </tr>
+    </table>>];
+
+  assets [label=<
+    <table border="0" cellborder="1" cellspacing="0" cellpadding="6" color="#c6e4e2">
+      <tr><td bgcolor="#e9f6f5"><b>Static assets (public/)</b></td></tr>
+      <tr><td bgcolor="#ffffff">images/<br/>hero · similar · avatars<br/>chips · UI icons</td></tr>
+      <tr><td bgcolor="#ffffff">fonts/AirbnbCerealVF.woff2</td></tr>
+    </table>>];
+
+  /* ---------- ui | overlays ---------- */
+  ui [label=<
+    <table border="0" cellborder="1" cellspacing="0" cellpadding="7" color="#c9e2cd">
+      <tr><td colspan="4" bgcolor="#eaf5ec"><b>UI components</b></td></tr>
+      <tr>
+        <td bgcolor="#ffffff">Header<br/>logo · search · nav</td>
+        <td bgcolor="#ffffff">Booking widget<br/>dates · guests · Reserve</td>
+        <td bgcolor="#ffffff">More stays nearby<br/>carousel · page counter</td>
+        <td bgcolor="#ffffff">Toast<br/>bottom-center</td>
+      </tr>
+    </table>>];
+
+  overlays [label=<
+    <table border="0" cellborder="1" cellspacing="0" cellpadding="6" color="#d8ccee">
+      <tr><td bgcolor="#f2ecfa"><b>Overlays</b></td></tr>
+      <tr><td bgcolor="#ffffff">PhotoTour<br/>categories + room sections</td></tr>
+      <tr><td bgcolor="#ffffff">Lightbox<br/>full-screen viewer · keyboard nav</td></tr>
+      <tr><td bgcolor="#ffffff">AmenitiesModal<br/>50 amenities · search</td></tr>
+    </table>>];
+
+  { rank=same; data; app; assets; }
+  { rank=same; ui; overlays; }
+  ui -> overlays [style=invis];
+
+  runtime -> entry;
+  entry -> app;
+  data  -> app;
+  app   -> ui;
+  app   -> overlays;
+  assets -> ui [style=dashed, color="#b9c2c8", label="  assets  ", fontcolor="#9aa0a6", fontsize=9];
+}
